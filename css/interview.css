@@ -315,6 +315,7 @@ section h2 span {
 		position: fixed;
 		width: 100%;
 		z-index:500;
+		top:-10px;
 	}
 	
 	#sidebarWrap{
