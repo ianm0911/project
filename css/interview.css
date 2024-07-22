@@ -299,15 +299,32 @@ section h2 span {
 		float: none;
 		width: 100%;
 	}
-	.article img{
-		float: none;
-		display: block;
-		margin: 0 auto 20px;
-	}
+	.article {
+        display: block;
+        text-align: center;
+    }
+    
+    .article img {
+        margin: 0 auto 20px;
+        float: none;
+    }
+    
+    .article p {
+        font-size: 16px; /* 모바일 화면에 맞는 폰트 크기 조정 */
+        margin: 0 auto; /* 텍스트 중앙 정렬 */
+        width: 90%; /* 가독성을 위한 여백 추가 */
+    }
+	
 	#map iframe{
 		width: 96% !important;
 		left: 2%;
 	}
+
+	.inner p {
+        font-size: 16px; /* 모바일에서 읽기 쉽게 폰트 크기 조정 */
+        color: #000; /* 텍스트 색상 설정 */
+    }
+
 }
 
 @media only screen and (max-width: 799px){
@@ -315,7 +332,6 @@ section h2 span {
 		position: fixed;
 		width: 100%;
 		z-index:500;
-		top:-10px;
 	}
 	
 	#sidebarWrap{
