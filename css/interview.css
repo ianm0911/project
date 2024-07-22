@@ -94,10 +94,34 @@ section h2 span {
 	border-bottom: 1px solid #a0a0a0;
 }
 
-.innerS{
-	width: 60%;
-	margin: 0 auto;
-	padding-bottom: 80px;
+
+
+/* SEC01 PROFILE
+------------------------------------------------------------*/
+#sec01{
+	padding-bottom: 0 !important;
+}
+
+
+.article{
+	clear: both;
+	overflow: hidden;
+	padding-bottom: 50px;
+	display: flex;
+	align-items: center ;
+	font-size: 20px;
+	
+}
+
+.article img{
+	float: left;
+	margin: 5px 20px 20px;
+	border-radius: 90px;
+}
+
+.article p{
+	margin-bottom: 20px;
+	
 }
 
 
@@ -138,30 +162,10 @@ section h2 span {
 	margin: 0 auto;
 }
 .inner p{
-	text-align: center;
+	text-align: left;
 }
 
 
-/* SEC04 PROJECT
-------------------------------------------------------------*/
-#sec04{
-	padding-bottom: 0 !important;
-}
-
-.article{
-	clear: both;
-	overflow: hidden;
-	padding-bottom: 50px;
-}
-
-.article img{
-	float: left;
-	margin: 5px 20px 20px;
-}
-
-.article p{
-	margin-bottom: 20px;
-}
 
 
 
