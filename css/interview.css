@@ -323,6 +323,7 @@ section h2 span {
 	.inner p {
         font-size: 16px; /* 모바일에서 읽기 쉽게 폰트 크기 조정 */
         color: #000; /* 텍스트 색상 설정 */
+	text-align: center;
     }
 
 }
