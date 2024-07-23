@@ -392,7 +392,7 @@ section h2 span {
 	}
 
 	#menuBtn:before{
-  	transform: translateY(-6px;
+  	transform: translateY(-6px);
 	}
 	#menuBtn:after{
   	transform: translateY(6px);
