@@ -36,7 +36,7 @@ a:active, a:focus,input:active, input:focus{outline:0;}
 
 /* ヘッダー
 ------------------------------------------------------------*/
-h1 {
+#mainnav, h1 {
 	background:rgb(247, 255, 255);
 }
 
@@ -94,7 +94,11 @@ section h2 span {
 	border-bottom: 1px solid #a0a0a0;
 }
 
-
+.innerS{
+	width: 60%;
+	margin: 0 auto;
+	padding-bottom: 80px;
+}
 
 /* SEC01 PROFILE
 ------------------------------------------------------------*/
@@ -125,36 +129,11 @@ section h2 span {
 }
 
 
-/* SEC02 Gallery
+/* SEC02 OPPORTUNITY
 ------------------------------------------------------------*/
 #sec02{
-	padding: 0 !important;
+	padding-top: -5rem;
 }
-
-#sec02 header{
-	display: none;
-}
-
-#gallery{
-	overflow: hidden;
-}
-
-#gallery li{
-	float: left;
-	width: calc(100%/3);
-	line-height: 0;
-}
-#gallery li.full{
-	width: 100%;
-}
-
-
-#gallery img{
-	display: block;
-	width: 100%;
-	height: auto;
-}
-
 
 /* SEC03 INTRODUCE
 ------------------------------------------------------------*/
@@ -299,6 +278,8 @@ section h2 span {
 		float: none;
 		width: 100%;
 	}
+
+	/* 모바일 대응 */
 	.article {
         display: block;
         text-align: center;

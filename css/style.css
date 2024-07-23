@@ -36,8 +36,7 @@ a:active, a:focus,input:active, input:focus{outline:0;}
 
 /* ヘッダー
 ------------------------------------------------------------*/
-
-h1 {
+#mainnav, h1 {
 	background:rgb(247, 255, 255);
 }
 
@@ -178,22 +177,6 @@ section h2 span {
   margin: 20px 0;
 }
 
-#map{
-	position: relative;
-	padding-bottom: 75%;
-	height: 0;
-	overflow: hidden;
-	z-index: 0;
-}
-
-#map iframe{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100% !important;
-	height: 100% !important;
-	border: 0;
-}
 
 
 
