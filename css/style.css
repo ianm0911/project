@@ -124,7 +124,6 @@ section h2 span {
 	width: 100%;
 }
 
-
 #gallery img{
 	display: block;
 	width: 100%;
@@ -165,24 +164,71 @@ section h2 span {
 
 
 
-/* SEC05 COMPANY
+/* SEC05 INTERVIEW
 ------------------------------------------------------------*/
-#sec05 p{
-	margin-bottom: 5px;
+#sec05 {
+    padding: 20px 0;
 }
 
-.col2 li{
-	display: inline-block;
-	width: 100%;
-  margin: 20px 0;
+#sec05 header {
+    margin-bottom: 50px;
 }
 
+#sec05 h2 {
+    text-align: center;
+    font-size: 22px;
+    font-weight: normal;
+}
 
+#sec05 .inner {
+    width: 80%;
+    margin: 0 auto;
+}
 
+#sec05 .col4 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* 항목 사이의 간격 조정 */
+    justify-content: center; /* 가운데 정렬 */
+}
 
+#sec05 .col4 li {
+    width: calc(33.33% - 20px); /* 3개의 항목을 한 줄에 배치 */
+    box-sizing: border-box;
+    text-align: center; /* 텍스트 가운데 정렬 */
+}
 
-/* RESPONSIVE 設定
+#sec05 .col4 .img {
+    margin: 0 auto;
+}
+
+#sec05 .col4 p {
+    font-size: 14px; /* 텍스트 크기 조정 (sec03과 동일) */
+    line-height: 1.7; /* 줄 높이 조정 */
+}
+
+#sec05 .col4 img {
+    width: 168px; /* 이미지 크기 조정 (sec03과 동일) */
+    height: 168px; /* 이미지 크기 조정 (sec03과 동일) */
+    margin-bottom: 10px; /* 이미지와 텍스트 간격 조정 (sec03과 동일) */
+}
+
+/* MOBILE STYLES
 ------------------------------------------------------------*/
+@media only screen and (max-width: 640px){
+    #sec05 .col4 {
+        flex-direction: column; /* 모바일에서는 항목을 수직으로 배치 */
+    }
+    
+    #sec05 .col4 li {
+        width: 100%; /* 모바일에서는 각 항목을 100% 폭으로 설정 */
+        margin-bottom: 20px; /* 항목 사이의 간격 조절 */
+    }
+    
+    #sec05 .col4 li:last-child {
+        margin-bottom: 0; /* 마지막 항목의 하단 간격 제거 */
+    }
+}
 
 @media only screen and (min-width: 800px){
 	body{
@@ -339,102 +385,48 @@ section h2 span {
   	content: "";
   	position: absolute;
   	top: 50%;
-  	left: 0;
   	width: 18px;
   	height: 2px;
   	background: #000;
-  	transition: .3s;
+  	transition: .2s;
 	}
 
 	#menuBtn:before{
-  	margin-top: -7px;
+  	transform: translateY(-6px;
 	}
-
 	#menuBtn:after{
-  	margin-top: 5px;
+  	transform: translateY(6px);
 	}
-
-	a#menu .close{
-  	background: transparent;
-	}
-
-	a#menu .close:before, a#menu .close:after{
-  	margin-top: 0;
-	}
-
-	a#menu .close:before{
-  	transform: rotate(-45deg);
-  	-webkit-transform: rotate(-45deg);
-	}
-
-	a#menu .close:after{
-  	transform: rotate(-135deg);
-  	-webkit-transform: rotate(-135deg);
-	}
-
-	.panel{
-		width: 100%;
-		display: none;
-		overflow: hidden;
-		position: relative;
-		left: 0;
-		top: -20px;
-		z-index: 100;
-	}
-
-	#mainnav{
+	
+	.panel {
 		position: absolute;
-		top: 0;
-		width: 100%;
-		text-align: right;
-	}
-
-	#mainnav ul{
-		border-bottom: 1px solid #ccc;
+		top: 40px;
+		right: 0;
 		background: #fff;
-		text-align: left;
+		width: 100%;
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height .4s ease-out;
 	}
-
-	#mainnav li a{
-		position: relative;
-		display: block;
-		padding: 15px 25px;
+	
+	.panel ul{
+		padding: 20px;
+	}
+	
+	.panel li{
+		padding: 15px 0;
 		border-bottom: 1px solid #ccc;
+	}
+	
+	.panel li:last-child{
+		border: none;
+	}
+	
+	.panel li a{
 		color: #000;
-		font-weight: 400;
 	}
-	#mainnav li a:before{
-		display: block;
-		content: "";
-		position: absolute;
-		top: 50%;
-		left: 5px;
-		width: 6px;
-		height: 6px;
-		margin: -4px 0 0 0;
-		border-top: solid 2px #000;
-		border-right: solid 2px #000;
-		-webkit-transform: rotate(45deg);
-		transform: rotate(45deg);
-	}
-	#mainnav #sns li{
-		display: inline-block;
-	}
-	#mainnav #sns li a{
-		position: relative;
-		display: inline-block;
-		padding: 15px 10px 0;
-		border: 0;
-	}
-	#mainnav #sns li a:before{
-		border: 0;
-	}
-	.col4 li{
-		margin: 0 auto 50px;
-		display: block;
-		text-align: center;
-	}
-	section h2{
-		margin: 55px auto;
+	
+	.panel.show {
+		max-height: 500px;
 	}
 }
