@@ -59,7 +59,7 @@ a:active, a:focus, input:active, input:focus {
 
 /* 헤더
 ------------------------------------------------------------*/
-#mainnav, h1 {
+h1 {
     background: rgb(247, 255, 255);
 }
 
@@ -302,13 +302,11 @@ section h2 span {
         position: fixed;
         width: 100%;
         z-index: 500;
-        top: -10px;
     }
 
     #sidebarWrap {
         position: relative;
         width: 100%;
-        background: #fff;
         border-bottom: 1px solid #ccc;
     }
 
