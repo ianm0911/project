@@ -163,56 +163,71 @@ section h2 span {
 }
 
 
-
 /* SEC05 INTERVIEW
 ------------------------------------------------------------*/
 #sec05 {
-    padding: 20px 0;
+	padding: 20px 0;
 }
 
 #sec05 header {
-    margin-bottom: 50px;
+	margin-bottom: 50px;
 }
 
 #sec05 h2 {
-    text-align: center;
-    font-size: 22px;
-    font-weight: normal;
+	text-align: center;
+	font-size: 22px;
+	font-weight: normal;
 }
 
 #sec05 .inner {
-    width: 80%;
-    margin: 0 auto;
+	width: 80%;
+	margin: 0 auto;
 }
 
 #sec05 .col4 {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px; /* 항목 사이의 간격 조정 */
-    justify-content: center; /* 가운데 정렬 */
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px; /* 항목 사이의 간격 조정 */
+	justify-content: center; /* 가운데 정렬 */
 }
 
 #sec05 .col4 li {
-    width: calc(33.33% - 20px); /* 3개의 항목을 한 줄에 배치 */
-    box-sizing: border-box;
-    text-align: center; /* 텍스트 가운데 정렬 */
+	width: calc(33.33% - 20px); /* 3개의 항목을 한 줄에 배치 */
+	box-sizing: border-box;
+	text-align: center; /* 텍스트 가운데 정렬 */
 }
 
 #sec05 .col4 .img {
-    margin: 0 auto;
+	margin: 0 auto;
 }
 
 #sec05 .col4 p {
-    font-size: 14px; /* 텍스트 크기 조정 (sec03과 동일) */
-    line-height: 1.7; /* 줄 높이 조정 */
+	font-size: 14px; /* 텍스트 크기 조정 (sec03과 동일) */
+	line-height: 1.7; /* 줄 높이 조정 */
 }
 
 #sec05 .col4 img {
-    width: 168px; /* 이미지 크기 조정 (sec03과 동일) */
-    height: 168px; /* 이미지 크기 조정 (sec03과 동일) */
-    margin-bottom: 10px; /* 이미지와 텍스트 간격 조정 (sec03과 동일) */
+	width: 168px; /* 이미지 크기 조정 (sec03과 동일) */
+	height: 168px; /* 이미지 크기 조정 (sec03과 동일) */
+	margin-bottom: 10px; /* 이미지와 텍스트 간격 조정 (sec03과 동일) */
 }
 
+#sec05 .col4 .name {
+	font-size: 16px; /* 이름 텍스트 크기 */
+	font-weight: bold; /* 이름 텍스트 굵기 */
+	margin-top: 5px; /* 이미지와 이름 텍스트 간격 조정 */
+}
+
+#sec05 .col4 a {
+	text-decoration: none; /* 링크 밑줄 제거 */
+	color: inherit; /* 링크 색상 상속 */
+	display: block; /* 링크를 블록 요소로 만들어 클릭 가능한 영역을 확장 */
+	transition: transform 0.2s ease-in-out; /* 부드러운 전환 효과 */
+}
+
+#sec05 .col4 a:hover {
+	transform: scale(1.05); /* 호버 시 전체 항목 확대 */
+}
 /* MOBILE STYLES
 ------------------------------------------------------------*/
 @media only screen and (max-width: 640px){
