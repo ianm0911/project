@@ -36,7 +36,7 @@ a:active, a:focus,input:active, input:focus{outline:0;}
 
 /* ヘッダー
 ------------------------------------------------------------*/
-#mainnav, h1 {
+h1 {
 	background:rgb(247, 255, 255);
 }
 
@@ -361,7 +361,7 @@ section h2 span {
 	#sidebarWrap{
 		position: relative;
 		width: 100%;
-		background: #fff;
+		
 		border-bottom: 1px solid #ccc;
 	}
 	
@@ -403,45 +403,98 @@ section h2 span {
   	width: 18px;
   	height: 2px;
   	background: #000;
-  	transition: .2s;
+  	transition: .3s;
 	}
 
 	#menuBtn:before{
-  	transform: translateY(-6px);
+  	  margin-top: -7px;
 	}
 	#menuBtn:after{
-  	transform: translateY(6px);
+  	  margin-top: 5px;
 	}
+
+	a#menu .close{
+  	  background: transparent;
+	}
+
+	a#menu .close:before, a#menu .close:after{
+  	  margin-top: 0;
+	}
+
+	a#menu .close:before{
+  	  transform: rotate(-45deg);
+  	  -webkit-transform: rotate(-45deg);
+	}
+
+	a#menu .close:after{
+  	  transform: rotate(-135deg);
+  	  -webkit-transform: rotate(-135deg);
+	}
+
 	
-	.panel {
-		position: absolute;
-		top: 40px;
-		right: 0;
-		background: #fff;
+	.panel{
 		width: 100%;
-		max-height: 0;
+		display: none;
 		overflow: hidden;
-		transition: max-height .4s ease-out;
+		position: relative;
+		left: 0;
+		top: -20px;
+		z-index: 100;
 	}
 	
-	.panel ul{
-		padding: 20px;
+	#mainnav{
+		position: absolute;
+		top: 0;
+		width: 100%;
+		text-align: right;
 	}
-	
-	.panel li{
-		padding: 15px 0;
+
+	#mainnav ul{
 		border-bottom: 1px solid #ccc;
+		background: #fff;
+		text-align: left;
 	}
-	
-	.panel li:last-child{
-		border: none;
-	}
-	
-	.panel li a{
+
+	#mainnav li a{
+		position: relative;
+		display: block;
+		padding: 15px 25px;
+		border-bottom: 1px solid #ccc;
 		color: #000;
+		font-weight: 400;
 	}
-	
-	.panel.show {
-		max-height: 500px;
+	#mainnav li a:before{
+		display: block;
+		content: "";
+		position: absolute;
+		top: 50%;
+		left: 5px;
+		width: 6px;
+		height: 6px;
+		margin: -4px 0 0 0;
+		border-top: solid 2px #000;
+		border-right: solid 2px #000;
+		-webkit-transform: rotate(45deg);
+		transform: rotate(45deg);
+	}
+	#mainnav #sns li{
+		display: inline-block;
+	}
+	#mainnav #sns li a{
+		position: relative;
+		display: inline-block;
+		padding: 15px 10px 0;
+		border: 0;
+	}
+	#mainnav #sns li a:before{
+		border: 0;
+	}
+	.col4 li{
+		margin: 0 auto 50px;
+		display: block;
+		text-align: center;
+	}
+	section h2{
+		margin: 55px auto;
 	}
 }
