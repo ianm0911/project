@@ -1,3 +1,4 @@
+// 모바일 메뉴
 $(function(){
 	
 	var
@@ -39,3 +40,39 @@ $(function(){
 	});
 
 });
+
+
+
+// 슬라이드버튼메뉴
+function toggleNav() {
+	var btn = document.getElementById('btn');
+	var nav = document.getElementById('btnnav');
+	btn.classList.toggle('open');
+	nav.classList.toggle('open');
+}
+
+function selectSlide(slideId) {
+	// Add your slide selection logic here
+	console.log('Selected slide:', slideId);
+}
+
+
+
+// 슬라이드 버튼
+function selectSlide(slideId) {
+	document.getElementById(slideId).checked = true;
+	updateSlide();
+}
+
+function updateSlide() {
+	const slidelist = document.querySelector('.slidelist');
+	const slideIndex = Array.from(document.getElementsByName('slide')).findIndex(slide => slide.checked);
+	slidelist.style.transform = 'translateX(' + (-slideWidth * slideIndex) + 'px)';
+}
+
+document.querySelectorAll('input[name="slide"]').forEach(input => {
+	input.addEventListener('change', updateSlide);
+});
+
+// 초기 슬라이드 설정
+updateSlide();
