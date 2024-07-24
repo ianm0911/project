@@ -2,38 +2,16 @@
 @import url(https://fonts.googleapis.com/css?family=Modern+Antiqua);
 
 /* reset */
-body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
-    margin: 0;
-    padding: 0;
-}
-address, caption, cite, code, dfn, em, strong, th, var {
-    font-style: normal;
-}
-ul {
-    list-style: none;
-}
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-caption, th {
-    text-align: left;
-}
-q:before, q:after {
-    content: '';
-}
-object, embed {
-    vertical-align: top;
-}
-legend {
-    display: none;
-}
-h1, h2, h3, h4, h5, h6 {
-    font-size: 100%;
-}
-img, abbr, acronym, fieldset {
-    border: 0;
-}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;}
+ul{list-style:none;}
+table{border-collapse:collapse;border-spacing:0;}
+caption,th{text-align:left;}
+q:before,q:after{content:'';}
+object,embed{vertical-align:top;}
+legend{display:none;}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+img,abbr,acronym,fieldset{border:0;}
 
 body {
     font: 14px/1.9 'Noto Sans JP', Arial, Verdana, 游ゴシック, YuGothic, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', メイリオ, Meiryo, sans-serif;
@@ -108,7 +86,7 @@ section h2 span {
 .inner {
     width: 80%;
     margin: 0 auto;
-    padding-bottom: 50px;
+   
 }
 
 #sec03 .inner, #sec04 .inner {
@@ -118,7 +96,8 @@ section h2 span {
 .innerS {
     width: 60%;
     margin: 0 auto;
-    padding-bottom: 80px;
+    text-align: center;
+    font-size: 18px;
 }
 
 /* SEC01 PROFILE
@@ -378,15 +357,7 @@ section h2 span {
         -webkit-transform: rotate(-135deg);
     }
 
-    .panel {
-        width: 100%;
-        display: none;
-        overflow: hidden;
-        position: relative;
-        left: 0;
-        top: -20px;
-        z-index: 100;
-    }
+   
 
     #mainnav {
         position: absolute;
