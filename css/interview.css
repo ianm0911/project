@@ -35,9 +35,87 @@ a:active, a:focus, input:active, input:focus {
     outline: 0;
 }
 
+
+/* 슬라이드 버튼
+------------------------------------------------------------*/
+#btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+.bar {
+    width: 24px;
+    height: 3px;
+    background: #000;
+    transition: all 0.3s;
+}
+
+/* Updated navigation menu styling for horizontal layout */
+#btnnav {
+    display: none;
+    position: absolute;
+    left: 0;
+    background: #fff;
+    border: 1px solid #ccc;
+    z-index: 1;
+}
+
+#btnnav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+
+#btnnav li {
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    flex: 1 1 auto; /* Allow items to grow and shrink as needed */
+}
+
+
+#btnnav li button {
+    display: block;
+    padding: 15px 25px;
+    background: none;
+    border: none;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%; /* Make buttons take full width of their container */
+}
+
+#btnnav li button:hover {
+    background: #f0f0f0;
+}
+
+#btn.open .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 6px);
+}
+
+#btn.open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+#btn.open .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -6px);
+}
+
+#btnnav.open {
+    display: flex;
+    justify-content: center;
+}
+
 /* 헤더
 ------------------------------------------------------------*/
-#mainnav,h1 {
+ h1 {
     background: rgb(247, 255, 255);
 }
 
@@ -280,6 +358,7 @@ section h2 span {
 }
 
 @media only screen and (max-width: 799px) {
+   
     #sidebar {
         position: fixed;
         width: 100%;
@@ -300,6 +379,7 @@ section h2 span {
     #sidebar h1 img {
         width: auto !important;
         max-height: 25px;
+        padding: 0px 0px 8px 0px;
     }
 
     a#menu {
@@ -373,6 +453,11 @@ section h2 span {
         border-bottom: 1px solid #ccc;
         background: #fff;
         text-align: left;
+     
+    }
+    .panel{
+        position: relative;
+        top:-10px;
     }
 
     #mainnav li a {
@@ -423,6 +508,9 @@ section h2 span {
     section h2 {
         margin: 55px auto;
     }
+    
+   
+    
 }
 
 @media only screen and (min-width: 800px){
