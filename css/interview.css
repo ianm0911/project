@@ -127,16 +127,10 @@ section h2 span {
 
 /* SEC02 OPPORTUNITY
 ------------------------------------------------------------*/
-#sec02 {
-    padding-top: -5rem;
-}
 
-/* SEC03 INTRODUCE
-------------------------------------------------------------*/
-#sec03 {
-    padding-top: 20px;
-}
 
+/* SEC03 INTERVIEW
+------------------------------------------------------------*/  
 #sec03 .inner {
     width: 80%;
     margin: 0 auto;
@@ -172,7 +166,7 @@ section h2 span {
     margin-bottom: 10px;
 }
 
-/* SEC05 COMPANY
+/* SEC05 OTHERS
 ------------------------------------------------------------*/
 #sec05 {
     padding: 20px 0;
@@ -180,12 +174,6 @@ section h2 span {
 
 #sec05 header {
     margin-bottom: 50px;
-}
-
-#sec05 h2 {
-    text-align: center;
-    font-size: 22px;
-    font-weight: normal;
 }
 
 #sec05 .inner {
@@ -227,7 +215,22 @@ section h2 span {
     height: 168px; /* 이미지 크기 조정 */
     margin-bottom: 10px; /* 이미지와 텍스트 간격 조정 */
 }
+#sec05 .col4 .name {
+	font-size: 16px; /* 이름 텍스트 크기 */
+	font-weight: bold; /* 이름 텍스트 굵기 */
+	margin-top: 5px; /* 이미지와 이름 텍스트 간격 조정 */
+}
 
+#sec05 .col4 a {
+	text-decoration: none; /* 링크 밑줄 제거 */
+	color: inherit; /* 링크 색상 상속 */
+	display: block; /* 링크를 블록 요소로 만들어 클릭 가능한 영역을 확장 */
+	transition: transform 0.2s ease-in-out; /* 부드러운 전환 효과 */
+}
+
+#sec05 .col4 a:hover {
+	transform: scale(1.05); /* 호버 시 전체 항목 확대 */
+}
 /* 모바일 대응 */
 @media only screen and (max-width: 640px){
     #sec05 .col2 {
