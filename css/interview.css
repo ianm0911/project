@@ -546,8 +546,13 @@ section h2 span {
     section h2 {
         margin: 55px auto;
     }
+	
     #btnnav li button {
-       font-size:12px;
+        font-size: 10px;
+    }
+
+    #btnnav li button{
+        padding: 3px 5px;
     }
 }
 
