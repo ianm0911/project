@@ -75,55 +75,28 @@
 		/* RIGHT -300px로 화살표가 안보이게 되어있도록 준 스타일 */
 
 		/* INPUT이 체크되면 변화값이 li까지 전달되는 스타일 */
-		.section input[id="slide01"]:checked~.slidewrap .slidelist>li {
-			transform: translateX(0%);
-		}
-
-		.section input[id="slide02"]:checked~.slidewrap .slidelist>li {
-			transform: translateX(-100%);
-		}
-
-		.section input[id="slide03"]:checked~.slidewrap .slidelist>li {
-			transform: translateX(-200%);
-		}
-
+		.section input[id="slide01"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}
+		.section input[id="slide02"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}
+		.section input[id="slide03"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-200%);}
+		.section input[id="slide04"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-300%);}
+		.section input[id="slide05"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-400%);}
+		.section input[id="slide06"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-500%);}
+		.section input[id="slide07"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-600%);}
+		.section input[id="slide08"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-700%);}
+		.section input[id="slide09"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-800%);}
+		.section input[id="slide10"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-900%);}
+		.section input[id="slide11"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-1000%);}
+		.section input[id="slide12"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-1100%);}
+		.section input[id="slide13"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-1200%);}
+		.section input[id="slide14"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-1300%);}
+		.section input[id="slide15"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-1400%);}
+	
 		/* INPUT이 체크되면 변화값이 LEFT,RIGHT에 전달되는 스타일 */
-		.section input[id="slide01"]:checked~.slidewrap li:nth-child(1) .left {
-			left: 30px;
-			transition: all .35s ease .5s;
-		}
+		.section input[id^="slide"]:checked ~ .slidewrap li .left, 
+	  .section input[id^="slide"]:checked ~ .slidewrap li .right {transition: all .35s ease .5s;}
+		.section input[id^="slide"]:checked ~ .slidewrap li .left { left: 30px; }
+		.section input[id^="slide"]:checked ~ .slidewrap li .right { right: 30px; }
 
-		/* 1번 INPUT이 체크되면 1번 슬라이드의 왼쪽 화살표의 LEFT값이 변하면서 나타나도록 준 스타일 */
-		.section input[id="slide01"]:checked~.slidewrap li:nth-child(1) .right {
-			right: 30px;
-			transition: all .35s ease .5s;
-		}
-
-		/* 1번 INPUT이 체크되면 1번 슬라이드의 오른쪽 화살표의 LEFT값이 변하면서 나타나도록 준 스타일 */
-		.section input[id="slide02"]:checked~.slidewrap li:nth-child(2) .left {
-			left: 30px;
-			transition: all .35s ease .5s;
-		}
-
-		/* 2번 INPUT이 체크되면 1번 슬라이드의 왼쪽 화살표의 LEFT값이 변하면서 나타나도록 준 스타일 */
-		.section input[id="slide02"]:checked~.slidewrap li:nth-child(2) .right {
-			right: 30px;
-			transition: all .35s ease .5s;
-		}
-
-		/* 2번 INPUT이 체크되면 1번 슬라이드의 오른쪽 화살표의 LEFT값이 변하면서 나타나도록 준 스타일 */
-		.section input[id="slide03"]:checked~.slidewrap li:nth-child(3) .left {
-			left: 30px;
-			transition: all .35s ease .5s;
-		}
-
-		/* 3번 INPUT이 체크되면 1번 슬라이드의 왼쪽 화살표의 LEFT값이 변하면서 나타나도록 준 스타일 */
-		.section input[id="slide03"]:checked~.slidewrap li:nth-child(3) .right {
-			right: 30px;
-			transition: all .35s ease .5s;
-		}
-
-		/* 3번 INPUT이 체크되면 1번 슬라이드의 오른쪽 화살표의 LEFT값이 변하면서 나타나도록 준 스타일 */
 	</style>
 </head>
 
@@ -221,27 +194,123 @@
 					<input type="radio" name="slide" id="slide01" checked>
 					<input type="radio" name="slide" id="slide02">
 					<input type="radio" name="slide" id="slide03">
-
+					<input type="radio" name="slide" id="slide04">
+					<input type="radio" name="slide" id="slide05">
+					<input type="radio" name="slide" id="slide06">
+					<input type="radio" name="slide" id="slide07">
+					<input type="radio" name="slide" id="slide08">
+					<input type="radio" name="slide" id="slide09">
+					<input type="radio" name="slide" id="slide10">
+					<input type="radio" name="slide" id="slide11">
+					<input type="radio" name="slide" id="slide12">
+					<input type="radio" name="slide" id="slide13">
+					<input type="radio" name="slide" id="slide14">
+					<input type="radio" name="slide" id="slide15">
+			
 					<div class="slidewrap">
 						<ul class="slidelist">
 							<li>
 								<a>
-									<label for="slide03" class="left"></label>
-									<img src="./images/photo09.jpg">
+									<label for="slide15" class="left"></label>
+									<img src="./images/타이틀_일.png">
 									<label for="slide02" class="right"></label>
 								</a>
 							</li>
 							<li>
 								<a>
 									<label for="slide01" class="left"></label>
-									<img src="./images/photo07.jpg">
+									<img src="./images/일_이유진선배님1.png">
 									<label for="slide03" class="right"></label>
 								</a>
 							</li>
 							<li>
 								<a>
 									<label for="slide02" class="left"></label>
-									<img src="./images/photo08.jpg">
+									<img src="./images/일_이유진선배님2.png">
+									<label for="slide04" class="right"></label>
+								</a>
+							</li>
+							<li>
+								<a>
+									<label for="slide03" class="left"></label>
+									<img src="./images/일_이유진선배님3.png">
+									<label for="slide05" class="right"></label>
+								</a>
+							</li>
+							<li>
+								<a>
+									<label for="slide04" class="left"></label>
+									<img src="./images/타이틀_비즈니스문화.png">
+									<label for="slide06" class="right"></label>
+								</a>
+							</li>
+							<li>
+								<a>
+									<label for="slide05" class="left"></label>
+									<img src="./images/비지니스_이유진선배님1.png">
+									<label for="slide07" class="right"></label>
+								</a>
+							</li>
+							<li>
+								<a>
+									<label for="slide06" class="left"></label>
+									<img src="./images/비지니스_이유진선배님2.png">
+									<label for="slide08" class="right"></label>
+								</a>
+							</li>
+							<li>
+								<a>
+									<label for="slide07" class="left"></label>
+									<img src="./images/비지니스_이유진선배님3.png">
+									<label for="slide09" class="right"></label>
+								</a>
+							</li>
+							<li>
+								<a>
+									<label for="slide08" class="left"></label>
+									<img src="./images/타이틀_커뮤니케이션.png">
+									<label for="slide10" class="right"></label>
+								</a>
+							</li>
+							<li>
+								<a>
+									<label for="slide09" class="left"></label>
+									<img src="./images/커뮤니케이션_이유진선배님.png">
+									<label for="slide11" class="right"></label>
+								</a>
+							</li>
+							<li>
+								<a>
+									<label for="slide10" class="left"></label>
+									<img src="./images/커뮤니케이션_이유진선배님2.png">
+									<label for="slide12" class="right"></label>
+								</a>
+							</li>
+							<li>
+								<a>
+									<label for="slide11" class="left"></label>
+									<img src="./images/커뮤니케이션_이유진선배님3.png">
+									<label for="slide13" class="right"></label>
+								</a>
+							</li>
+							<li>
+								<a>
+									<label for="slide12" class="left"></label>
+									<img src="./images/타이틀_사내분위기.png">
+									<label for="slide14" class="right"></label>
+								</a>
+							</li>
+							<li>
+								<a>
+									<label for="slide13" class="left"></label>
+									<img src="./images/회사분위기_이유진선배님1.png">
+									<label for="slide15" class="right"></label>
+								</a>
+							</li>
+							<li>
+								<a>
+									<label for="slide14" class="left"></label>
+									<img src="./images/회사분위기_이유진선배님2.png">
 									<label for="slide01" class="right"></label>
 								</a>
 							</li>
@@ -249,6 +318,40 @@
 					</div>
 				</div>
 
+				<div class="btn-container">
+					<span id="btn" onclick="toggleNav()">
+							<div class="bar"></div>
+							<div class="bar"></div>
+							<div class="bar"></div>
+					</span>
+					<nav id="btnnav">
+							<ul class="btnlist">
+								<div id="bc1">
+									<li><button class="bt1" class="btn" onclick="selectSlide('slide01')">仕事について</button></li>
+									<li><button class="btn" onclick="selectSlide('slide02')">大変だったところ１</button></li>
+									<li><button class="btn" onclick="selectSlide('slide03')">大変だったところ２</button></li>
+									<li><button class="btn" onclick="selectSlide('slide04')">TIP＆マナー</button></li>
+								</div>
+								<div id="bc2">
+									<li><button class="bt2" class="btn" onclick="selectSlide('slide05')">ビジネス文化</button></li>
+									<li><button class="btn" onclick="selectSlide('slide06')">良いところ</button></li>
+									<li><button class="btn" onclick="selectSlide('slide07')">注意点１</button></li>
+									<li><button class="btn" onclick="selectSlide('slide08')">注意点２</button></li>
+								</div>
+								<div id="bc3">
+									<li><button class="bt3" class="btn" onclick="selectSlide('slide09')">コミュニケーション</button></li>
+									<li><button class="btn" onclick="selectSlide('slide10')">円満な関係１</button></li>
+									<li><button class="btn" onclick="selectSlide('slide11')">円満な関係２</button></li>
+									<li><button class="btn" onclick="selectSlide('slide12')">アドバイス</button></li>
+								</div>
+								<div id="bc4">
+									<li><button class="bt4" class="btn" onclick="selectSlide('slide13')">社内雰囲気</button></li>
+									<li><button class="btn" onclick="selectSlide('slide14')">有給休暇</button></li>
+									<li><button class="btn" onclick="selectSlide('slide15')">退勤雰囲気</button></li>
+								</div>
+							</ul>
+					</nav>
+			</div>
 				<!-- // INTERVIEW -->
 				<!-- PROJECT -->
 				<section id="sec04">
