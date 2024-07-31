@@ -545,9 +545,9 @@ section h2 span {
     section h2 {
         margin: 55px auto;
     }
-    
-   
-    
+    #btnnav li button {
+       font-size:12px;
+    }
 }
 
 @media only screen and (min-width: 800px){
