@@ -36,7 +36,7 @@ a:active, a:focus, input:active, input:focus {
 }
 
 
-/* 슬라이드 버튼
+/* 슬라이드 버튼 🈪
 ------------------------------------------------------------*/
 #btn {
     display: flex;
@@ -77,6 +77,7 @@ a:active, a:focus, input:active, input:focus {
 #btnnav li {
     border-right: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
     flex: 1 1 auto; /* Allow items to grow and shrink as needed */
 }
 
@@ -87,7 +88,7 @@ a:active, a:focus, input:active, input:focus {
     background: none;
     border: none;
     text-align: left;
-    font-size: 16px;
+
     cursor: pointer;
     width: 100%; /* Make buttons take full width of their container */
 }
@@ -95,7 +96,7 @@ a:active, a:focus, input:active, input:focus {
 #btnnav li button:hover {
     background: #f0f0f0;
 }
-
+/* 🈪→X */
 #btn.open .bar:nth-child(1) {
     transform: rotate(45deg) translate(5px, 6px);
 }
@@ -112,6 +113,43 @@ a:active, a:focus, input:active, input:focus {
     display: flex;
     justify-content: center;
 }
+
+/* 버튼 색상 */
+#bc1{
+      background-color: lightblue;
+  }
+#bc2{
+      background-color: pink;
+  }
+#bc3{
+      background-color: plum;
+  }
+#bc4{
+      background-color: lightgoldenrodyellow;
+  }
+
+/* 버튼 타이틀 */
+.bt1{
+    font-size: 20px;
+    color: pink ;
+    -webkit-text-stroke:0.4px #000;
+}
+.bt2{
+    font-size: 20px;
+    color: lightblue ;
+    -webkit-text-stroke: 0.4px #000;
+}
+.bt3{
+    font-size: 20px;
+    color: lightgoldenrodyellow ;
+    -webkit-text-stroke: 0.4px #000;
+}
+.bt4{
+    font-size: 20px;
+    color: plum ;
+    -webkit-text-stroke: 0.4px #000;
+}
+
 
 /* 헤더
 ------------------------------------------------------------*/
