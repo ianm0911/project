@@ -236,6 +236,8 @@ section h2 span {
 /* MOBILE STYLES
 ------------------------------------------------------------*/
 @media only screen and (min-width: 800px){
+	
+	
 	body{
 		font-size:14px;
 	}
@@ -342,6 +344,11 @@ section h2 span {
 }
 
 @media only screen and (max-width: 799px){
+	
+	.three {
+		display: none;
+	}
+	
 	#sidebar{
 		position: fixed;
 		width: 100%;
