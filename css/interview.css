@@ -35,6 +35,9 @@ a:active, a:focus, input:active, input:focus {
     outline: 0;
 }
 
+.three a:hover{
+    text-decoration: none;
+}
 
 /* 슬라이드 버튼 🈪
 ------------------------------------------------------------*/
@@ -50,11 +53,17 @@ a:active, a:focus, input:active, input:focus {
     left: 48%;
 }
 
+
+
 .bar {
     width: 24px;
     height: 3px;
     background: #000;
     transition: all 0.3s;
+}
+.c{
+    font-size: 16PX;
+    text-align: center;
 }
 
 /* Updated navigation menu styling for horizontal layout */
@@ -224,6 +233,11 @@ section h2 span {
     font-size: 18px;
 }
 
+.innerS p{
+    font-size: 14px;
+    background-color: rgb(252, 252, 138);
+}
+
 /* SEC01 PROFILE
 ------------------------------------------------------------*/
 #sec01 {
@@ -249,12 +263,30 @@ section h2 span {
     margin-bottom: 20px;
 }
 
+#sec04 .two p{
+    width: 60%;
+    max-width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 14px;
+    background-color: rgb(252, 252, 138);
+}
+
 /* SEC02 MOTIVE
 ------------------------------------------------------------*/
 
 
 /* SEC03 INTERVIEW
 ------------------------------------------------------------*/  
+.one p{
+    width: 60%;
+    max-width: 25%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 14px;
+    background-color: rgb(252, 252, 138);
+}
+
 #sec03 .inner {
     width: 80%;
     margin: 0 auto;
@@ -420,11 +452,13 @@ section h2 span {
 
     #sidebar h1 {
         text-align: center;
+        padding-top: 15px;
     }
 
     #sidebar h1 img {
         width: 100px;
-	max-height: 100px;
+		max-height: 100px;
+
     }
 
     a#menu {
@@ -560,13 +594,6 @@ section h2 span {
 
     #btnnav li button{
         padding: 3px 5px;
-    }
-
-    .innerS{
-	font-size: 16px;
-    }
-    #btnnav {
-	left: 0;
     }
 }
 
