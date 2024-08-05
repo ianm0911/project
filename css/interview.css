@@ -61,7 +61,7 @@ a:active, a:focus, input:active, input:focus {
 #btnnav {
     display: none;
     position: absolute;
-    left: 0;
+    left: 13%;
     background: #fff;
     border: 1px solid #ccc;
     z-index: 1;
@@ -564,6 +564,9 @@ section h2 span {
 
     .innerS{
 	font-size: 16px;
+    }
+    #btnnav {
+	left: 0;
     }
 }
 
