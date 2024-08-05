@@ -560,6 +560,10 @@ section h2 span {
     #btnnav li button{
         padding: 3px 5px;
     }
+
+    .innerS{
+	font-size: 16px;
+    }
 }
 
 @media only screen and (min-width: 800px){
