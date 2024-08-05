@@ -599,6 +599,10 @@ section h2 span {
     #btnnav li button{
         padding: 3px 5px;
     }
+
+    #btn {
+	left:0;
+    }
 }
 
 @media only screen and (min-width: 800px){
