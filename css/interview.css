@@ -61,7 +61,7 @@ a:active, a:focus, input:active, input:focus {
 #btnnav {
     display: none;
     position: absolute;
-    left: 13%;
+    left: 12%;
     background: #fff;
     border: 1px solid #ccc;
     z-index: 1;
