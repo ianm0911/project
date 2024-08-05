@@ -212,6 +212,10 @@ section h2 span {
     border-bottom: 1px solid #a0a0a0;
 }
 
+#sec04 p{
+    font-size: 18px;
+}
+
 .innerS {
     width: 60%;
     margin: 0 auto;
@@ -552,7 +556,7 @@ section h2 span {
     }
 	
     #btnnav li button {
-        font-size: 11px;
+        font-size: 10px;
     }
 
     #btnnav li button{
