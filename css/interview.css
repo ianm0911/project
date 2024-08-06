@@ -264,8 +264,8 @@ section h2 span {
 }
 
 #sec04 .two p{
-    width: 60%;
-    max-width: 40%;
+    width: 100%;
+    max-width: 100%;
     margin: 0 auto;
     text-align: center;
     font-size: 14px;
