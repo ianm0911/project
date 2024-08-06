@@ -637,6 +637,10 @@ section h2 span {
     #btnnav li button{
         padding: 3px 5px;
     }
+	
+    #btnnav{
+        margin: 0 auto;
+    }
 
 }
 
