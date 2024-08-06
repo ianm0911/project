@@ -69,10 +69,8 @@ a:active, a:focus, input:active, input:focus {
 /* Updated navigation menu styling for horizontal layout */
 #btnnav {
     display: none;
-    position: absolute;
-    left: 12%;
-    background: #fff;
-    border: 1px solid #ccc;
+    position: static;
+    margin: 0 auto;
     z-index: 1;
 }
 
@@ -122,6 +120,10 @@ a:active, a:focus, input:active, input:focus {
 #btnnav.open {
     display: flex;
     justify-content: center;
+}
+
+#btnnav.open ~ .c{
+    display: none;
 }
 
 /* 버튼 색상 */
@@ -635,9 +637,6 @@ section h2 span {
         padding: 3px 5px;
     }
 
-    #btnnav {
-	left: 0;
-    }
 }
 
 @media only screen and (min-width: 800px){
