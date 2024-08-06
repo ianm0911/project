@@ -404,7 +404,6 @@ section h2 span {
 
     .innerS {
         width: 94%;
-        max-width: auto;
         padding-bottom: 30px;
         font-size: 15px;
     }
@@ -413,7 +412,7 @@ section h2 span {
         display: block;
         text-align: center;
         font-size: 15px;
-        
+        white-space: nowrap;
     }
 
     .article img {
@@ -443,7 +442,7 @@ section h2 span {
    
     .one p{
         width: 60%;
-        max-width: 55%;
+        max-width: 60%;
         margin: 0 auto;
         text-align: center;
         font-size: 13px;
