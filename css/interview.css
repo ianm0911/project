@@ -436,6 +436,10 @@ section h2 span {
         color: #000; /* 텍스트 색상 설정 */
         text-align: center;
     }
+
+    span {
+        display: block;
+    }
 }
 
 @media only screen and (max-width: 799px) {
