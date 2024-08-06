@@ -411,7 +411,7 @@ section h2 span {
     .article {
         display: block;
         text-align: center;
-        font-size: 15px;
+        font-size: 2.8vw;
         white-space: nowrap;
     }
 
@@ -449,16 +449,16 @@ section h2 span {
         max-width: 60%;
         margin: 0 auto;
         text-align: center;
-        font-size: 13px;
+        font-size: 2.9vw;
         background-color: rgb(252, 252, 138);
     }
 
     #sec04 .two p{
         width: 100%;
-        max-width: 90%;
+        max-width: 100%;
         margin: 0 auto;
         text-align: center;
-        font-size: 13px;
+        font-size: 2.9vw;
         background-color: rgb(252, 252, 138);
     }
 
