@@ -80,7 +80,8 @@ a:active, a:focus, input:active, input:focus {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
     flex-wrap: wrap; /* Allow items to wrap to the next line */
 }
 
@@ -628,7 +629,7 @@ section h2 span {
     }
 	
     #btnnav li button {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     #btnnav li button{
