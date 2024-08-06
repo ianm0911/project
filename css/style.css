@@ -112,9 +112,7 @@ section h2 span {
 	padding: 0 !important;
 }
 
-#sec02 header{
-	display: none;
-}
+
 
 #gallery{
 	overflow: hidden;
@@ -155,7 +153,7 @@ section h2 span {
 .article{
 	clear: both;
 	overflow: hidden;
-	padding-bottom: 50px;
+	padding-bottom: 10px;
 }
 
 .article img{
@@ -327,6 +325,7 @@ section h2 span {
 	.innerS{
 		width: 94%;
 		padding-bottom: 30px;
+		font-size: 3vw;
 	}
 	#gallery li{
 		float: none;
