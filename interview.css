@@ -437,7 +437,6 @@ section h2 span {
         text-align: center;
     }
 
-
     span {
         display: block;
     }
@@ -446,20 +445,20 @@ section h2 span {
 @media only screen and (max-width: 799px) {
    
     .one p{
-        width: 60%;
-        max-width: 60%;
+        width: 100%;
+        max-width: 100%;
         margin: 0 auto;
         text-align: center;
-        font-size: 2.3vw;
+        font-size: 2.9vw;
         background-color: rgb(252, 252, 138);
     }
 
     #sec04 .two p{
         width: 100%;
-        max-width: 90%;
+        max-width: 100%;
         margin: 0 auto;
         text-align: center;
-        font-size: 2.3vw;
+        font-size: 2.9vw;
         background-color: rgb(252, 252, 138);
     }
 
