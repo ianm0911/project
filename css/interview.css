@@ -78,8 +78,7 @@ a:active, a:focus, input:active, input:focus {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+    display: flex;
     flex-wrap: wrap; /* Allow items to wrap to the next line */
 }
 
@@ -641,6 +640,15 @@ section h2 span {
 	
     #btnnav{
         margin: 0 auto;
+    }
+
+    #btnnav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        flex-wrap: wrap; /* Allow items to wrap to the next line */
     }
 
 }
